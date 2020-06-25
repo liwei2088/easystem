@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+spring:
+  thymeleaf:
+    cache: false                    # 关闭页面缓存
+    encoding: UTF-8                 # 模板编码
+    prefix: classpath:/templates/   # 页面映射路径
+    suffix: .html                   # 试图后的后缀
+    servlet:
+      content-type: text/html       # 默认上下文类型 html
+  resources:
+    static-locations: classpath:/templates/,classpath:/static/  #静态文件存放位置
+  datasource:     #配置数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/easystem?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1qaz2wsx
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: cn.edu.hfuu.easystem.entity
+
