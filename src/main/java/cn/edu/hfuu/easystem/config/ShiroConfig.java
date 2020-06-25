@@ -25,7 +25,7 @@ public class ShiroConfig {
 
     private int hashIterations = 1024;
 
-    private String loginUrl = "/user/login";
+    private String loginUrl = "/login";
 
     @Bean("credentialsMatcher")
     public HashedCredentialsMatcher hashedCredentialsMatcher(){
@@ -55,8 +55,9 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setSecurityManager(defaultWebSecurityManager);
         shiroFilterFactoryBean.setLoginUrl(loginUrl);
         Map<String, String> map = new HashMap<String, String>();
-        map.put("/user/login", "anon");
-        map.put("/user/getCode", "anon");
+        map.put("/login", "anon");
+        map.put("/check", "anon");
+        map.put("/getCode", "anon");
         map.put("/css/**","anon");
         map.put("/js/**","anon");
         map.put("/images/**","anon");
