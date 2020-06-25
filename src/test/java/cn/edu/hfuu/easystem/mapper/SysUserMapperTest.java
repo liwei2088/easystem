@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @SpringBootTest
 class SysUserMapperTest {
@@ -14,8 +13,8 @@ class SysUserMapperTest {
     private UserMapper userMapper;
 
     @Test
-    public void testSysUserMapper() {
-        List<User> users = userMapper.findAll();
-        users.forEach(u -> System.out.println(u));
+    public void findAll() {
+        User user = userMapper.findByUserName("liwei");
+        System.out.println(user);
     }
 }

@@ -8,12 +8,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.format.annotation.DateTimeFormat;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Date;
 
 @Data
+@Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
@@ -24,10 +25,8 @@ public class User implements Serializable {
     private String username;
     private String password;
     private String status;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date createtime;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date lastlogintime;
 }
