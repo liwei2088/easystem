@@ -8,6 +8,7 @@ import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
@@ -30,7 +31,7 @@ public class UserRealm extends AuthorizingRealm {
         if (user != null) {
             ActiveUser activeUser = new ActiveUser();
             activeUser.setUser(user);
-            ByteSource credentialsSalt = ByteSource.Util.bytes("KyuM2I%H");
+            ByteSource credentialsSalt = ByteSource.Util.bytes(user.getSalt());
             SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(activeUser, user.getPassword(), credentialsSalt, this.getName());
             return info;
         }

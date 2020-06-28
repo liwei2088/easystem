@@ -18,13 +18,14 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@TableName("sys_user")
+@TableName("zc_sys_user")
 public class User implements Serializable {
     @TableId(value = "userid", type = IdType.UUID)
     private String id;
     private String username;
     private String password;
     private String status;
+    private String salt;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date createtime;
     @JsonFormat(pattern = "yyyy-MM-dd")

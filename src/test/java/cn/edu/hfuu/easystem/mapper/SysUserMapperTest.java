@@ -14,7 +14,7 @@ class SysUserMapperTest {
 
     @Test
     public void findAll() {
-        User user = userMapper.findByUserName("liwei");
+        User user = userMapper.findByUserName("admin");
         System.out.println(user);
     }
 }
