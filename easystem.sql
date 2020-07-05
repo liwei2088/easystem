@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80020
 File Encoding         : 65001
 
-Date: 2020-07-05 21:55:12
+Date: 2020-07-05 22:03:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -58,10 +58,10 @@ CREATE TABLE `rz_sys_permission` (
 -- ----------------------------
 -- Records of rz_sys_permission
 -- ----------------------------
-INSERT INTO `rz_sys_permission` VALUES ('1', '0', 'menu', '工程认证管理系统', null, '&#xe68e', null, null, '1', '1', '1');
+INSERT INTO `rz_sys_permission` VALUES ('11111111111111111111111111111111', '0', 'menu', '工程认证管理系统', null, '&#xe68e', null, null, '1', '1', '1');
 INSERT INTO `rz_sys_permission` VALUES ('2736fa38e33f45a6aad0a8fde693927c', '5c9d422284a84c48bc3f576edb53d951', 'menu', '权限管理', null, '&#xe857', '/sys/toPermissionManager', null, '0', '5', '1');
 INSERT INTO `rz_sys_permission` VALUES ('41728fb43cf94161873d4ef857cf258b', '5c9d422284a84c48bc3f576edb53d951', 'menu', '用户管理', null, '&#xe612', '/sys/toUserManager', null, '0', '3', '1');
-INSERT INTO `rz_sys_permission` VALUES ('5c9d422284a84c48bc3f576edb53d951', '1', 'menu', '系统管理', null, '&#xe614', null, null, '1', '2', '1');
+INSERT INTO `rz_sys_permission` VALUES ('5c9d422284a84c48bc3f576edb53d951', '11111111111111111111111111111111', 'menu', '系统管理', null, '&#xe614', null, null, '1', '2', '1');
 INSERT INTO `rz_sys_permission` VALUES ('6c3f0f4786d94bb2b79539fe79d77237', '5c9d422284a84c48bc3f576edb53d951', 'menu', '结构管理', null, '&#xe770', '/sys/toOrgManager', null, '0', '7', '1');
 INSERT INTO `rz_sys_permission` VALUES ('90f6a88e86aa4ed9a21713b2abcebc6f', '5c9d422284a84c48bc3f576edb53d951', 'menu', '角色管理', null, '&#xe650', '/sys/toRoleManager', null, '0', '4', '1');
 INSERT INTO `rz_sys_permission` VALUES ('da16dd8652c143459432895cbc10fab2', '5c9d422284a84c48bc3f576edb53d951', 'menu', '菜单管理', null, '&#xe663', '/sys/toMenuManager', null, '0', '6', '1');

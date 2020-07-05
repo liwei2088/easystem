@@ -1,7 +1,6 @@
 package cn.edu.hfuu.easystem.service.impl;
 
 import cn.edu.hfuu.easystem.Common.Constast;
-import cn.edu.hfuu.easystem.Common.ResultObj;
 import cn.edu.hfuu.easystem.Common.TreeNode;
 import cn.edu.hfuu.easystem.Common.TreeNodeBuilder;
 import cn.edu.hfuu.easystem.entity.Permission;
