@@ -18,7 +18,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@TableName("zc_sys_user")
+@TableName("rz_sys_user")
 public class User implements Serializable {
     @TableId(value = "userid", type = IdType.UUID)
     private String id;

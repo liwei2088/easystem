@@ -10,16 +10,16 @@ Target Server Type    : MYSQL
 Target Server Version : 80020
 File Encoding         : 65001
 
-Date: 2020-06-28 11:34:25
+Date: 2020-07-05 14:34:49
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for zc_sys_user
+-- Table structure for rz_sys_user
 -- ----------------------------
-DROP TABLE IF EXISTS `zc_sys_user`;
-CREATE TABLE `zc_sys_user` (
+DROP TABLE IF EXISTS `rz_sys_user`;
+CREATE TABLE `rz_sys_user` (
   `userid` varchar(32) NOT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
@@ -31,6 +31,6 @@ CREATE TABLE `zc_sys_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of zc_sys_user
+-- Records of rz_sys_user
 -- ----------------------------
-INSERT INTO `zc_sys_user` VALUES ('1', 'admin', 'e663c9d0e861e346188ad7477a9456aa', '1', 'hfuu', '2020-06-28 09:23:23', '2020-06-28 09:23:26');
+INSERT INTO `rz_sys_user` VALUES ('1', 'admin', 'e663c9d0e861e346188ad7477a9456aa', '1', 'hfuu', '2020-06-28 09:23:23', '2020-06-28 09:23:26');

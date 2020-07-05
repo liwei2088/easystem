@@ -13,7 +13,7 @@
     </resultMap>
 
     <select id="findByUserName" resultMap="BaseResultMap" parameterType="string">
-        select * from zc_sys_user where username = #{username} limit 0,1
+        select * from rz_sys_user where username = #{username} limit 0,1
     </select>
 
 </mapper>
