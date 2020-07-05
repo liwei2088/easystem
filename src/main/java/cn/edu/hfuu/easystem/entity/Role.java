@@ -12,23 +12,17 @@ import java.util.Date;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@TableName("rz_sys_user")
-public class User implements Serializable {
-    @TableId(value = "userid", type = IdType.UUID)
+@Accessors(chain = true)
+@TableName("rz_sys_role")
+public class Role implements Serializable {
+    @TableId(value = "roleid", type = IdType.UUID)
     private String id;
-    private String username;
-    private String password;
-    //用户状态  1 表示可用    0 表示禁用
+    private String name;
+    private String remark;
     private Integer status;
-    //用户类型  1 表示系统用户 0表示超级管理员
-    private Integer type;
-    private String salt;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date createtime;
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date lastlogintime;
 }
