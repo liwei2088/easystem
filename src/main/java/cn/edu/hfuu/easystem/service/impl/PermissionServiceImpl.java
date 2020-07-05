@@ -73,6 +73,6 @@ public class PermissionServiceImpl implements PermissionService {
             Boolean spread = p.getOpen().equals(Constast.OPEN_TRUE);
             treeNodes.add(new TreeNode(id, pid, title, icon, href, spread));
         }
-        return TreeNodeBuilder.build(treeNodes, "1");
+        return TreeNodeBuilder.build(treeNodes, "11111111111111111111111111111111");
     }
 }
