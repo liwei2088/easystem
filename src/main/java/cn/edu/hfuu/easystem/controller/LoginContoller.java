@@ -24,7 +24,7 @@ import java.io.IOException;
 
 @Controller
 @RequestMapping("/")
-public class IndexContoller {
+public class LoginContoller {
 
     private UserService userService;
 
